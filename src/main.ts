@@ -6,6 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   // ----Swagger-----------
+  
   const options = new DocumentBuilder()
     .setTitle('Authentication')
     .setDescription('The Authentication API description')
