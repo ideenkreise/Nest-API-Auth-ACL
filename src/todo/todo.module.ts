@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { TodoService } from './todo.service';
-import { TodoController } from './todo.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { TodoEntity } from './entities/todo.entity';
 import { AuthModule } from 'src/auth/auth.module';
+import { TodoEntity } from './entities/todo.entity';
+import { TodoController } from './todo.controller';
+import { TodoService } from './todo.service';
 
 @Module({
   imports: [

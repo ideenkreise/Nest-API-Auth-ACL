@@ -1,5 +1,5 @@
-import { BaseEntity, Column, Entity, JoinTable, ManyToMany, ManyToOne, PrimaryColumn, Unique } from "typeorm";
 import * as bcrypt from 'bcrypt';
+import { BaseEntity, Column, Entity, JoinTable, ManyToMany, PrimaryColumn, Unique } from "typeorm";
 import { Role } from "./role.entity";
 @Entity()
 @Unique(['user_name'])

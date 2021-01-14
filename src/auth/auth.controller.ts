@@ -1,5 +1,4 @@
 import { Body, Controller, Delete, Get, Param, Post, Put, UseGuards } from '@nestjs/common';
-import { AuthGuard } from '@nestjs/passport';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { AuthService } from './auth.service';
 import { CreateUserDto } from './dto/create-user.dto';
@@ -10,7 +9,7 @@ import { GetUser } from './get-user.decorator';
 import { AuthPayload } from './interface/auth.payload.interface';
 import { JwtAuthGuard } from './jwt.guard';
 import { RoleEnum } from './role.enum';
-import { hasRoles, Roles } from './roles.decorator';
+import { hasRoles } from './roles.decorator';
 import { RolesGuard } from './roles.guard';
 
 @Controller('auth')

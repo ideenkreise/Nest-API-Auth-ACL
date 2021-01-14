@@ -4,8 +4,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
-import { TypeOrmConfigService } from './config/typeorm.config';
 import { CaslModule } from './casl/casl.module';
+import { TypeOrmConfigService } from './config/typeorm.config';
 import { TodoModule } from './todo/todo.module';
 @Module({
   imports: [

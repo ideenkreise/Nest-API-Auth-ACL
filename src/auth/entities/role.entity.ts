@@ -1,6 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { BaseEntity, Column, Entity, JoinTable, ManyToMany, PrimaryColumn, Unique } from "typeorm";
-import { User } from "./user.entity";
+import { BaseEntity, Column, Entity, PrimaryColumn, Unique } from "typeorm";
+
 @Entity()
 @Unique(['role'])
 export class Role extends BaseEntity {
@@ -11,5 +11,4 @@ export class Role extends BaseEntity {
     @ApiProperty()
     @Column({ default: true })
     status: boolean;
-
 }
